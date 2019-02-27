@@ -1,0 +1,8 @@
+{
+  "name": "vue-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yusuke Hirao <yusukehirao@me.com>",
+  "license": "MIT",
+  "private": true
+}
