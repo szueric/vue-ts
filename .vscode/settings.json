@@ -1,0 +1,5 @@
+{
+	"eslint.autoFixOnSave": true,
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
+	"vetur.format.defaultFormatter.html": "prettier"
+}
