@@ -1,13 +1,3 @@
-import Sample from './sample.vue';
+import Sample from './vue-components/sample.vue';
 
-export { Sample };
-
-export default class Klass {
-	constructor() {
-		//
-	}
-
-	private _hoge() {
-		//
-	}
-}
+export default Sample;
