@@ -31,7 +31,6 @@
 			"error",
 			{
 				"html": {
-					"_void": "// 😢 for Prettier",
 					"void": "always",
 					"normal": "never",
 					"component": "always"
