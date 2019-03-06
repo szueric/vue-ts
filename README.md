@@ -1,4 +1,4 @@
 # Vue + TypeScript
 
 -   [x] on ESLint + Prettier
--   [ ] build by Rollup
+-   [x] build by Rollup
