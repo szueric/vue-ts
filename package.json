@@ -15,6 +15,7 @@
 	"browser": {
 		"./sfc": "src/vue-components/sample.vue"
 	},
+	"babel": {},
 	"devDependencies": {
 		"@types/argv": "^0.0.4",
 		"@types/jest": "^24.0.9",
