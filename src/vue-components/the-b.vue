@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div data-name="name"></div>
+		<div :data-name="name"></div>
 	</div>
 </template>
 
