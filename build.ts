@@ -70,7 +70,12 @@ async function build() {
 		for (const format of formats) {
 			const bundle = format === 'es' ? bundleES : bundleUM;
 			const name = format === 'es' ? 'index' : format;
-			const file = path.resolve('dist', componentFile.name, `${name}.js`);
+			const ext = format === 'es' ? 'mjs' : 'js';
+			const file = path.resolve(
+				'dist',
+				componentFile.name,
+				`${name}.vue.${ext}`
+			);
 			await bundle.write({
 				name: componentFile.name.replace(/-+([a-z])/g, ($0, $1) =>
 					($1 || '').toUpperCase()
