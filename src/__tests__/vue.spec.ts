@@ -1,4 +1,5 @@
-import TheA from '../vue-components/the-a.vue';
+import TheA from '../../dist/the-a/umd.vue';
+import TheB from '../../dist/the-b/umd.vue';
 import { shallowMount } from '@vue/test-utils';
 
 describe('TheA.vue', () => {
@@ -8,5 +9,19 @@ describe('TheA.vue', () => {
 			propsData: { defaultName }
 		});
 		expect(wrapper.text()).toMatch(defaultName);
+	});
+});
+
+describe('TheB.vue', () => {
+	it('is snapshot test the B ', () => {
+		const defaultName = 'Mr. B';
+		const wrapper = shallowMount(TheB, {
+			propsData: { defaultName }
+		});
+		expect(wrapper).toMatchInlineSnapshot(`
+<div>
+  <div data-name="Mr. B"></div>
+</div>
+`);
 	});
 });

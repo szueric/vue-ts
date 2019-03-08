@@ -4,5 +4,6 @@ module.exports = {
 	transform: {
 		'.*\\.(vue)$': 'vue-jest'
 	},
+	snapshotSerializers: ['jest-serializer-vue'],
 	testURL: 'http://localhost/'
 };
